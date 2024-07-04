@@ -1,57 +1,48 @@
-// script.js
+// Функция для обработки донатов
+function handleDonation(amount, currency) {
+    // Ваш код обработки платежа
+    console.log(`Received ${amount} ${currency} donation.`);
+    // Проверка выполнения условий для разблокировки заданий
+    checkTaskUnlock();
+}
 
-// Function to complete a task
-function completeTask(taskNumber) {
-    let answer;
-    switch (taskNumber) {
-        case 1:
-            answer = document.getElementById('puzzle1-answer').value;
-            if (answer.trim() === '4') {
-                alert('Task 1 completed successfully!');
-            } else {
-                alert('Incorrect answer. Try again!');
-            }
-            break;
-        case 2:
-            answer = document.getElementById('maze1-answer').value;
-            if (answer.trim().toLowerCase() === 'right') {
-                alert('Task 2 completed successfully!');
-            } else {
-                alert('Incorrect answer. Try again!');
-            }
-            break;
-        case 3:
-            answer = document.getElementById('secret1-answer').value;
-            if (window.atob(answer.trim()) === 'Hello world') {
-                alert('Task 3 completed successfully!');
-            } else {
-                alert('Incorrect answer. Try again!');
-            }
-            break;
-        case 4:
-            answer = document.getElementById('riddle1-answer').value;
-            if (answer.trim().toLowerCase() === 'keyboard') {
-                alert('Task 4 completed successfully!');
-            } else {
-                alert('Incorrect answer. Try again!');
-            }
-            break;
-        case 5:
-            answer = document.getElementById('code1-answer').value;
-            if (answer.trim().split(' ').map(num => String.fromCharCode(parseInt(num))).join('') === 'Red!!') {
-                alert('Task 5 completed successfully!');
-            } else {
-                alert('Incorrect answer. Try again!');
-            }
-            break;
-        default:
-            alert('Invalid task number.');
-            break;
+// Функция для проверки разблокировки заданий
+function checkTaskUnlock() {
+    // Здесь можно проверять, выполнены ли условия для разблокировки следующего задания
+    // Например, если сумма доната достаточная для разблокировки задания
+    let totalDonation = getTotalDonationAmount(); // Функция для получения общей суммы пожертвований
+    if (totalDonation >= 50) {
+        unlockNextTask();
     }
 }
 
-// Function to donate and unlock tasks
-function donateAndUnlock(taskNumber) {
-    // Implement donation logic here, e.g., redirect to donation page or handle payment
-    alert(`Donate $50 to unlock Task ${taskNumber}.`);
+// Функция для разблокировки следующего задания
+function unlockNextTask() {
+    // Ваш код для разблокировки следующего задания
+    console.log('Next task unlocked!');
+    // Добавление нового задания в список доступных заданий на странице
+    addNewTask();
 }
+
+// Функция для добавления нового задания на страницу
+function addNewTask() {
+    // Создание нового элемента задания
+    let newTask = document.createElement('li');
+    newTask.textContent = 'Task 6: Navigate the Crypto Jungle';
+    // Добавление нового задания в список на странице
+    let taskList = document.querySelector('#tasks ul');
+    taskList.appendChild(newTask);
+}
+
+// Пример работы событий
+document.addEventListener('DOMContentLoaded', function() {
+    // Ваши обработчики событий и другие функции могут быть добавлены здесь
+    // Например, обработчик события для кнопки "Donate via Beam Wallet"
+    let beamWalletButton = document.querySelector('#donate ul li a');
+    beamWalletButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        let donationAmount = 50; // Задаем сумму пожертвования для разблокировки задания
+        let currency = 'USD'; // Валюта пожертвования
+        handleDonation(donationAmount, currency);
+    });
+});
