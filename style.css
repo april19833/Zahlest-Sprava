@@ -84,9 +84,10 @@ footer {
     margin-bottom: 10px;
 }
 
-#donate ul li a#donate-button {
+/* Стили для кнопки Donate via Beam Wallet */
+#donate-button {
     display: block;
-    background-color: #ffd700; /* Цвет золота */
+    background-color: #ffd700; /* Золотистый цвет */
     color: #fff; /* Цвет текста */
     text-decoration: none;
     padding: 12px 20px; /* Поля кнопки */
@@ -102,9 +103,6 @@ footer {
     }
 }
 
-#donate ul li a:hover {
-    background-color: #45a049;
-}
 /* Дополнительные стили */
 #tasks ul {
     padding: 0;
