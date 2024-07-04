@@ -1,29 +1,56 @@
-// Function to handle Ethereum donations
-function donateEthereum() {
-    if (typeof window.ethereum !== 'undefined') {
-        ethereum.request({ method: 'eth_requestAccounts' })
-        .then(accounts => {
-            const account = accounts[0];
-            const amount = web3.utils.toWei('50', 'ether');
-            const transactionParameters = {
-                to: '0x9703fc5F0C0274740f251F30D7Ada155d1E597ff',
-                from: account,
-                value: amount,
-            };
+// Function to store task completion status
+function setTaskStatus(taskNumber, status) {
+    localStorage.setItem(`task${taskNumber}Status`, status);
+}
 
-            ethereum.request({
-                method: 'eth_sendTransaction',
-                params: [transactionParameters],
-            })
-            .then(txHash => console.log(txHash))
-            .catch(error => console.error);
-        });
+// Function to get task completion status
+function getTaskStatus(taskNumber) {
+    return localStorage.getItem(`task${taskNumber}Status`);
+}
+
+// Function to check if task is unlocked
+function checkTaskStatus(taskNumber, taskElement) {
+    if (getTaskStatus(taskNumber) === 'unlocked') {
+        taskElement.style.display = 'block';
     } else {
-        console.log('Ethereum wallet not detected');
+        taskElement.style.display = 'none';
     }
 }
 
-// Function to handle Beam Wallet donations
-function donateBeam() {
-    window.location.href = 'https://helga.beam.eco/';
+// Check the status of each task on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const task1 = document.getElementById('task1');
+    const task2 = document.getElementById('task2');
+    const task3 = document.getElementById('task3');
+
+    checkTaskStatus(1, task1);
+    checkTaskStatus(2, task2);
+    checkTaskStatus(3, task3);
+});
+
+// Function to unlock Task 1 after Ethereum donation
+function unlockTask1() {
+    donateEthereum();
+    setTaskStatus(1, 'unlocked');
+    alert('Task 1 unlocked!');
+}
+
+// Function to unlock Task 2 after completing Task 1
+function unlockTask2() {
+    if (getTaskStatus(1) === 'unlocked') {
+        setTaskStatus(2, 'unlocked');
+        alert('Task 2 unlocked!');
+    } else {
+        alert('Please complete Task 1 first.');
+    }
+}
+
+// Function to unlock Task 3 after completing Task 2
+function unlockTask3() {
+    if (getTaskStatus(2) === 'unlocked') {
+        setTaskStatus(3, 'unlocked');
+        alert('Task 3 unlocked!');
+    } else {
+        alert('Please complete Task 2 first.');
+    }
 }
