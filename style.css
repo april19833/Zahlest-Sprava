@@ -1,4 +1,4 @@
-/* Общие стили для всех страниц */
+/* Общие стили */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -45,8 +45,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-/* Стили для конкретных страниц */
 
 /* Стили для tasks.html */
 #tasks {
