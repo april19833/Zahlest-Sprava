@@ -87,3 +87,10 @@ function completeTask(taskNumber) {
     } else if (taskNumber === 3) {
         const answer = document.getElementById('secret1-answer').value.trim();
         if (
+// Function to simulate donation and unlock the next task
+function donateAndUnlock(taskNumber) {
+    alert('Thank you for your donation!');
+    setTaskStatus(taskNumber, 'unlocked');
+    alert(`Task ${taskNumber} unlocked!`);
+    checkTaskStatus(taskNumber, document.getElementById(`task${taskNumber}`));
+}
