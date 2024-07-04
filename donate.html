@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate via Beam Wallet</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a stylesheet -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,6 +31,26 @@
             color: #fff;
             padding: 1rem;
         }
+        /* Стили для кнопки Donate via Beam Wallet */
+        #donate-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ffd700; /* Золотистый цвет */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень кнопки */
+            background-image: linear-gradient(45deg, #ffd700, #ffaf00); /* Градиентный фон */
+            transition: background-image 0.3s ease; /* Плавное изменение фона */
+
+            /* При наведении изменяем градиент на более яркий */
+            &:hover {
+                background-image: linear-gradient(45deg, #ffaf00, #ffd700);
+            }
+        }
     </style>
 </head>
 <body>
@@ -41,8 +60,10 @@
     <main>
         <section>
             <p>Thank you for supporting our project! Please use the Beam Wallet address below to make your donation:</p>
-            <p class="helga.beam.eco">helga.beam.eco</p>
+            <p class="wallet-address">helga.beam.eco</p>
             <p>Your contribution helps us continue our mission. We appreciate your generosity!</p>
+            <!-- Кнопка для пожертвования -->
+            <button id="donate-button">Donate via Beam Wallet</button>
         </section>
     </main>
     <footer>
