@@ -1,18 +1,52 @@
 <?php
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $wallet_address = $_POST['wallet_address'];
+    $nft_task = $_POST['nft_task'];
+    
+    // Process the data (e.g., save to a database or send an email notification)
+    // Example: Save to a database
+    // $servername = "localhost";
+    // $username = "username";
+    // $password = "password";
+    // $dbname = "your_database";
 
-    // Validate and process data (for demonstration, just echoing here)
-    echo "<h2>Claim Successful</h2>";
-    echo "<p>Thank you, $name! Your NFT claim request has been received.</p>";
-    echo "<p>An email has been sent to $email with further instructions.</p>";
-    echo "<p>Stay tuned for more updates!</p>";
+    // Create connection
+    // $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
+    // if ($conn->connect_error) {
+    //     die("Connection failed: " . $conn->connect_error);
+    // }
+
+    // // Insert data into database
+    // $sql = "INSERT INTO nft_claim_requests (name, email, wallet_address, nft_task)
+    //         VALUES ('$name', '$email', '$wallet_address', '$nft_task')";
+
+    // if ($conn->query($sql) === TRUE) {
+    //     echo "NFT claim request submitted successfully.";
+    // } else {
+    //     echo "Error: " . $sql . "<br>" . $conn->error;
+    // }
+
+    // $conn->close();
+
+    // Example: Send an email notification
+    $to = "admin@example.com"; // Replace with your email address
+    $subject = "NFT Claim Request";
+    $message = "Name: $name\n";
+    $message .= "Email: $email\n";
+    $message .= "Wallet Address: $wallet_address\n";
+    $message .= "NFT Task: $nft_task\n";
+    $headers = "From: $email";
+
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Thank you, $name! Your NFT claim request has been submitted.";
+    } else {
+        echo "Oops! Something went wrong and we couldn't process your request.";
+    }
 } else {
-    // Redirect to claim form if accessed directly without POST request
-    header("Location: claim_nft.html");
-    exit();
+    echo "Access denied.";
 }
 ?>
