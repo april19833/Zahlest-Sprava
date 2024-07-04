@@ -1,53 +1,63 @@
-/* style.css */
-
+/* Your styles for the quest game go here */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+    background-color: #336699;
+    color: white;
     text-align: center;
+    padding: 1em 0;
 }
 
-nav a {
-    color: #fff;
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    margin: 0 1rem;
 }
 
-main {
-    padding: 2rem;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 section {
-    background-color: #fff;
-    margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    cursor: pointer;
-    margin-top: 0.5rem;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #336699;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
+    padding: 1em 0;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+/* Additional styles can be added as needed */
