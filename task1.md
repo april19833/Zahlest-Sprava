@@ -1,0 +1,30 @@
+# Task 1: Find the Secret Key to Enter
+
+Explore the Crypto Maze Quest by finding the hidden key to progress further in your journey.
+
+## Description
+
+You start your journey in the Crypto Maze Quest by searching for a hidden key. The key is concealed within a series of clues scattered throughout the maze. Your goal is to decipher the clues and locate the key to unlock the next phase of your quest.
+
+**Difficulty:** Easy
+
+## How to Complete Task 1
+
+1. **Navigate to the Tasks Page**: Go to the [Tasks Page](tasks.md) on our website.
+
+2. **Unlock Task 1**: Donate $50 to the specified Beam Wallet address to unlock Task 1.
+
+3. **Complete the Task**:
+   - Follow the clues provided in the maze.
+   - Use your cryptographic skills to decipher clues.
+   - Locate the hidden key.
+
+4. **Earn Your Reward**: Once you find the key, you'll receive an NFT related to Task 1. Claim your NFT by clicking [here](#).
+
+5. **Proceed to Next Task**: Use the key to unlock access to the next task in the Crypto Maze Quest.
+
+## Contact Us
+
+For any questions or support, please email us at [support@example.com](mailto:support@example.com).
+
+© 2024 Overflow from the Right. All rights reserved.
