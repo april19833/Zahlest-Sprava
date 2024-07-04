@@ -1,10 +1,10 @@
 // Задания квеста
 const tasks = [
-    { id: 1, name: 'Explore the Crypto Maze', reward: '10 DEV tokens' },
-    { id: 2, name: 'Decode the Blockchain Enigma', reward: '15 DEV tokens' },
-    { id: 3, name: 'Navigate the Token Tunnels', reward: '20 DEV tokens' },
-    { id: 4, name: 'Decrypt the Crypto Clues', reward: '25 DEV tokens' },
-    { id: 5, name: 'Master the Bitcoin Labyrinth', reward: '30 DEV tokens' }
+    { id: 1, name: 'Find the Secret Key to Enter', reward: '10 DEV tokens' },
+    { id: 2, name: 'Decrypt the Code on the Blockchain Wall', reward: '15 DEV tokens' },
+    { id: 3, name: 'Navigate the Crypto Tunnels', reward: '20 DEV tokens' },
+    { id: 4, name: 'Solve the Riddle of the Ethereum Labyrinth', reward: '25 DEV tokens' },
+    { id: 5, name: 'Master the Bitcoin Puzzle', reward: '30 DEV tokens' }
 ];
 
 // Функция для отображения заданий на странице tasks.html
@@ -59,8 +59,4 @@ document.addEventListener('DOMContentLoaded', function() {
         beamWalletButton.addEventListener('click', function(event) {
             event.preventDefault();
             const donationAmount = 50; // Сумма пожертвования для разблокировки задания
-            const currency = 'USD'; // Валюта пожертвования
-            handleDonation(donationAmount, currency);
-        });
-    }
-});
+           
