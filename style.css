@@ -96,13 +96,13 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень кнопки */
     background-image: linear-gradient(45deg, #ffd700, #ffaf00); /* Градиентный фон */
     transition: background-image 0.3s ease; /* Плавное изменение фона */
-
-    /* При наведении изменяем градиент на более яркий */
-    &:hover {
-        background-image: linear-gradient(45deg, #ffaf00, #ffd700);
-    }
 }
 
+/* Эффект подсветки при наведении */
+#donate-button:hover {
+    background-image: linear-gradient(45deg, #ffaf00, #ffd700);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
 /* Дополнительные стили */
 #tasks ul {
     padding: 0;
