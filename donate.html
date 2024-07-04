@@ -5,6 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Maze Quest - Donate</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        #donate {
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #donate ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        #donate ul li {
+            margin-bottom: 10px;
+        }
+        #donate ul li a#donate-link {
+            display: block;
+            background-color: #ffd700; /* Цвет золота */
+            color: #fff; /* Цвет текста */
+            text-decoration: none;
+            padding: 12px 20px; /* Поля кнопки */
+            text-align: center;
+            border-radius: 5px; /* Скругление углов */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень кнопки */
+            background-image: linear-gradient(45deg, #ffd700, #ffaf00); /* Градиентный фон */
+            transition: background-image 0.3s ease; /* Плавное изменение фона */
+        }
+        #donate ul li a#donate-link:hover {
+            background-image: linear-gradient(45deg, #ffaf00, #ffd700);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,7 +58,7 @@
     <section id="donate">
         <h2>Donate to Unlock Tasks</h2>
         <ul>
-            <li><a href="https://helga.beam.eco">Donate via Beam Wallet</a></li>
+            <li><a href="https://helga.beam.eco" id="donate-link">Donate via Beam Wallet</a></li>
         </ul>
     </section>
     <footer>
