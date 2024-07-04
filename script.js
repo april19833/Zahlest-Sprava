@@ -7,7 +7,7 @@ const tasks = [
     { id: 5, name: 'Master the Bitcoin Labyrinth', reward: '30 DEV tokens' }
 ];
 
-// Функция для отображения заданий на странице
+// Функция для отображения заданий на странице tasks.html
 function displayTasks() {
     const taskList = document.querySelector('#tasks ul');
     tasks.forEach(task => {
@@ -48,14 +48,20 @@ function getTotalDonations() {
 
 // Обработчик события загрузки страницы
 document.addEventListener('DOMContentLoaded', function() {
-    displayTasks(); // Отображаем задания при загрузке страницы
+    // Отображаем задания при загрузке страницы tasks.html
+    if (document.querySelector('#tasks')) {
+        displayTasks();
+    }
 
-    // Обработчик события для кнопки "Donate via Beam Wallet"
-    const beamWalletButton = document.querySelector('#donate ul li a');
-    beamWalletButton.addEventListener('click', function(event) {
-        event.preventDefault();
-        const donationAmount = 50; // Сумма пожертвования для разблокировки задания
-        const currency = 'USD'; // Валюта пожертвования
-        handleDonation(donationAmount, currency);
-    });
+    // Обработчик события для кнопки "Donate via Beam Wallet" на donate.html
+    const beamWalletButton = document.querySelector('#beamWallet');
+    if (beamWalletButton) {
+        beamWalletButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            const donationAmount = 50; // Сумма пожертвования для разблокировки задания
+            const currency = 'USD'; // Валюта пожертвования
+            handleDonation(donationAmount, currency);
+        });
+    }
 });
+``
