@@ -5,6 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Maze Quest</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: -1;
+            transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+            pointer-events: none;
+        }
+        nav ul li a:hover::before {
+            width: 300%;
+            height: 300%;
+            opacity: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,31 +80,6 @@
             <li><a href="donate.html">Donate to Unlock</a></li>
         </ul>
     </nav>
-    <footer>
-        <p>&copy; 2024 Crypto Maze Quest. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Maze Quest - Tasks</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Tasks in Crypto Maze Quest</h1>
-    </header>
-    <section id="tasks">
-        <h2>Explore the Crypto Maze</h2>
-        <ul>
-            <li><a href="tasks/task1.md">Task 1: Find the Secret Key to Enter</a></li>
-            <!-- Добавьте ссылки на другие задания здесь -->
-        </ul>
-    </section>
     <footer>
         <p>&copy; 2024 Crypto Maze Quest. All rights reserved.</p>
     </footer>
