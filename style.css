@@ -1,63 +1,101 @@
-/* Your styles for the quest game go here */
+/* Общие стили для всех страниц */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #336699;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 1rem;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
+nav {
+    background-color: #444;
+    padding: 0.5rem;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 footer {
-    background-color: #336699;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 1em 0;
-    position: absolute;
+    padding: 1rem;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-footer p {
-    margin: 0;
-    font-size: 0.8em;
+/* Стили для конкретных страниц */
+
+/* Стили для tasks.html */
+#tasks {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Additional styles can be added as needed */
+#tasks ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#tasks ul li {
+    margin-bottom: 10px;
+}
+
+/* Стили для donate.html */
+#donate {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#donate ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#donate ul li {
+    margin-bottom: 10px;
+}
+
+#donate ul li a {
+    display: block;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#donate ul li a:hover {
+    background-color: #45a049;
+}
