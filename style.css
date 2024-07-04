@@ -84,14 +84,22 @@ footer {
     margin-bottom: 10px;
 }
 
-#donate ul li a {
+#donate ul li a#donate-button {
     display: block;
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #ffd700; /* Цвет золота */
+    color: #fff; /* Цвет текста */
     text-decoration: none;
-    padding: 10px;
+    padding: 12px 20px; /* Поля кнопки */
     text-align: center;
-    border-radius: 5px;
+    border-radius: 5px; /* Скругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень кнопки */
+    background-image: linear-gradient(45deg, #ffd700, #ffaf00); /* Градиентный фон */
+    transition: background-image 0.3s ease; /* Плавное изменение фона */
+
+    /* При наведении изменяем градиент на более яркий */
+    &:hover {
+        background-image: linear-gradient(45deg, #ffaf00, #ffd700);
+    }
 }
 
 #donate ul li a:hover {
