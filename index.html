@@ -3,59 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasks - Overflow from the Right</title>
+    <title>Overflow from the Right - Quest for Traders</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Tasks</h1>
+        <h1>Welcome to Overflow from the Right</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="tasks.html">Tasks</a>
+            <ul>
+                <li><a href="#tasks">View Tasks</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section id="task1">
-            <h2>Task 1: Solve the Puzzle</h2>
-            <p>What is 2 + 2?</p>
-            <input type="text" id="puzzle1-answer">
-            <button onclick="completeTask(1)">Submit</button>
-        </section>
-        <section id="task2">
-            <h2>Task 2: Navigate the Maze</h2>
-            <p>What is the path from A to B?</p>
-            <input type="text" id="maze1-answer">
-            <button onclick="completeTask(2)">Submit</button>
-        </section>
-        <section id="task3">
-            <h2>Task 3: Decode the Secret Message</h2>
-            <p>What does "SGVsbG8gd29ybGQ=" mean?</p>
-            <input type="text" id="secret1-answer">
-            <button onclick="completeTask(3)">Submit</button>
-        </section>
-        <section id="task4">
-            <h2>Task 4: Solve the Riddle</h2>
-            <p>What has keys but can't open locks?</p>
-            <input type="text" id="riddle1-answer">
-            <button onclick="completeTask(4)">Submit</button>
-        </section>
-        <section id="task5">
-            <h2>Task 5: Crack the Code</h2>
-            <p>Decode the following: "52 65 64 21 21"</p>
-            <input type="text" id="code1-answer">
-            <button onclick="completeTask(5)">Submit</button>
-        </section>
-        <section id="donation">
-            <h2>Donate to Unlock Tasks</h2>
-            <button onclick="donateAndUnlock(1)">Donate $50 to Unlock Task 1</button>
-            <button onclick="donateAndUnlock(2)">Donate $50 to Unlock Task 2</button>
-            <button onclick="donateAndUnlock(3)">Donate $50 to Unlock Task 3</button>
-            <button onclick="donateAndUnlock(4)">Donate $50 to Unlock Task 4</button>
-        </section>
-    </main>
+    
+    <section id="tasks">
+        <h2>Available Tasks</h2>
+        <ul>
+            <li>Task 1: Explore the Crypto Maze</li>
+            <li>Task 2: Decode the Blockchain Enigma</li>
+            <li>Task 3: Navigate the Token Tunnels</li>
+            <li>Task 4: Decrypt the Crypto Clues</li>
+            <li>Task 5: Master the Bitcoin Labyrinth</li>
+        </ul>
+        <p>Complete tasks to earn DEV tokens and climb the leaderboard!</p>
+    </section>
+    
+    <section id="donate">
+        <h2>Donate to Continue</h2>
+        <p>To unlock the next task, donate $50:</p>
+        <ul>
+            <li>Ethereum: 0x9703fc5F0C0274740f251F30D7Ada155d1E597ff</li>
+            <li>Beam Wallet: <a href="#">Donate via Beam Wallet</a></li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For questions or support, email us at <a href="mailto:support@example.com">support@example.com</a>.</p>
+    </section>
+    
     <footer>
         <p>&copy; 2024 Overflow from the Right. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
