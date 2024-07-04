@@ -3,39 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahlest Sprava Tasks</title>
+    <title>Tasks - Захлест Справа</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Zahlest Sprava - Tasks</h1>
+        <h1>Tasks</h1>
         <nav>
             <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
         </nav>
     </header>
     <main>
         <section id="task1">
-            <h2>Task 1: Solve Puzzles</h2>
-            <p>Complete the following puzzles to unlock Task 2:</p>
-            <!-- Puzzle content goes here -->
-            <button onclick="completeTask(1)">Complete Task 1</button>
+            <h2>Task 1: Solve the Puzzle</h2>
+            <p>What is 2 + 2?</p>
+            <input type="text" id="puzzle1-answer">
+            <button onclick="completeTask(1)">Submit</button>
         </section>
         <section id="task2">
-            <h2>Task 2: Navigate Mazes</h2>
-            <p>Complete the maze to unlock Task 3:</p>
-            <!-- Maze content goes here -->
-            <button onclick="completeTask(2)">Complete Task 2</button>
+            <h2>Task 2: Navigate the Maze</h2>
+            <p>What is the path from A to B?</p>
+            <input type="text" id="maze1-answer">
+            <button onclick="completeTask(2)">Submit</button>
         </section>
         <section id="task3">
-            <h2>Task 3: Decode Secret Messages</h2>
-            <p>Decode the following secret messages to complete the quest:</p>
-            <!-- Secret message content goes here -->
-            <button onclick="completeTask(3)">Complete Task 3</button>
+            <h2>Task 3: Decode the Secret Message</h2>
+            <p>What does "SGVsbG8gd29ybGQ=" mean?</p>
+            <input type="text" id="secret1-answer">
+            <button onclick="completeTask(3)">Submit</button>
+        </section>
+        <section id="task4">
+            <h2>Task 4: Solve the Riddle</h2>
+            <p>What has keys but can't open locks?</p>
+            <input type="text" id="riddle1-answer">
+            <button onclick="completeTask(4)">Submit</button>
+        </section>
+        <section id="task5">
+            <h2>Task 5: Crack the Code</h2>
+            <p>Decode the following: "52 65 64 21 21"</p>
+            <input type="text" id="code1-answer">
+            <button onclick="completeTask(5)">Submit</button>
         </section>
     </main>
     <footer>
-        <p>© 2024 Zahlest Sprava. All rights reserved.</p>
+        <p>&copy; 2024 Захлест Справа. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
