@@ -59,4 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
         beamWalletButton.addEventListener('click', function(event) {
             event.preventDefault();
             const donationAmount = 50; // Сумма пожертвования для разблокировки задания
-           
+            const currency = 'USD'; // Валюта пожертвования
+            handleDonation(donationAmount, currency);
+        });
+    }
+});
