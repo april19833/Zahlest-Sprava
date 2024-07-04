@@ -45,9 +45,30 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень кнопки */
             background-image: linear-gradient(45deg, #ffd700, #ffaf00); /* Градиентный фон */
             transition: background-image 0.3s ease; /* Плавное изменение фона */
+            position: relative; /* Относительное позиционирование */
+            overflow: hidden; /* Скрытие частей дочерних элементов */
         }
         #donate ul li a#donate-link:hover {
             background-image: linear-gradient(45deg, #ffaf00, #ffd700);
+        }
+        /* Анимация для цветочков */
+        #donate ul li a#donate-link::before {
+            content: ''; /* Создаем пустой псевдоэлемент */
+            position: absolute; /* Абсолютное позиционирование относительно родительского элемента */
+            width: 300%; /* Ширина больше кнопки для анимации */
+            height: 300%; /* Высота больше кнопки для анимации */
+            background-image: radial-gradient(circle, #ffaf00 10%, transparent 20%); /* Градиентный фон для цветочков */
+            background-size: 30px 30px; /* Размеры цветочков */
+            border-radius: 50%; /* Круглые цветочки */
+            top: 90%; /* Расположение сверху */
+            left: 50%; /* Расположение слева */
+            transform: translate(-50%, -50%); /* Центрируем */
+            z-index: -1; /* Помещаем под кнопку */
+            opacity: 0; /* Начальная прозрачность */
+            transition: opacity 0.3s ease; /* Плавная анимация */
+        }
+        #donate ul li a#donate-link:hover::before {
+            opacity: 1; /* Показываем анимированные цветочки при наведении */
         }
     </style>
 </head>
