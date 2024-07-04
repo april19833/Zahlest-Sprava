@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasks - Захлест Справа</title>
+    <title>Tasks - Overflow from the Right</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,51 +19,43 @@
         <section id="task1">
             <h2>Task 1: Solve the Puzzle</h2>
             <p>What is 2 + 2?</p>
-            <input type="text" id="task1-answer">
+            <input type="text" id="puzzle1-answer">
             <button onclick="completeTask(1)">Submit</button>
         </section>
         <section id="task2">
             <h2>Task 2: Navigate the Maze</h2>
             <p>What is the path from A to B?</p>
-            <input type="text" id="task2-answer">
+            <input type="text" id="maze1-answer">
             <button onclick="completeTask(2)">Submit</button>
         </section>
         <section id="task3">
             <h2>Task 3: Decode the Secret Message</h2>
             <p>What does "SGVsbG8gd29ybGQ=" mean?</p>
-            <input type="text" id="task3-answer">
+            <input type="text" id="secret1-answer">
             <button onclick="completeTask(3)">Submit</button>
         </section>
         <section id="task4">
             <h2>Task 4: Solve the Riddle</h2>
             <p>What has keys but can't open locks?</p>
-            <input type="text" id="task4-answer">
+            <input type="text" id="riddle1-answer">
             <button onclick="completeTask(4)">Submit</button>
         </section>
         <section id="task5">
             <h2>Task 5: Crack the Code</h2>
             <p>Decode the following: "52 65 64 21 21"</p>
-            <input type="text" id="task5-answer">
+            <input type="text" id="code1-answer">
             <button onclick="completeTask(5)">Submit</button>
         </section>
         <section id="donation">
             <h2>Donate to Unlock Tasks</h2>
-            <button onclick="donateAndUnlock(1)">Donate $50 to Unlock Task 1 via Ethereum</button>
-            <button onclick="donateAndUnlock(2)">Donate $50 to Unlock Task 2 via Ethereum</button>
-            <button onclick="donateAndUnlock(3)">Donate $50 to Unlock Task 3 via Ethereum</button>
-            <button onclick="donateAndUnlock(4)">Donate $50 to Unlock Task 4 via Ethereum</button>
-            <button onclick="donateAndUnlock(5)">Donate $50 to Unlock Task 5 via Ethereum</button>
-            <br>
-            <button onclick="donateAndUnlockBeam(1)">Donate $50 to Unlock Task 1 via Beam Wallet</button>
-            <button onclick="donateAndUnlockBeam(2)">Donate $50 to Unlock Task 2 via Beam Wallet</button>
-            <button onclick="donateAndUnlockBeam(3)">Donate $50 to Unlock Task 3 via Beam Wallet</button>
-            <button onclick="donateAndUnlockBeam(4)">Donate $50 to Unlock Task 4 via Beam Wallet</button>
-            <button onclick="donateAndUnlockBeam(5)">Donate $50 to Unlock Task 5 via Beam Wallet</button>
+            <button onclick="donateAndUnlock(1)">Donate $50 to Unlock Task 1</button>
+            <button onclick="donateAndUnlock(2)">Donate $50 to Unlock Task 2</button>
+            <button onclick="donateAndUnlock(3)">Donate $50 to Unlock Task 3</button>
+            <button onclick="donateAndUnlock(4)">Donate $50 to Unlock Task 4</button>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Захлест Справа. All rights reserved.</p>
+        <p>&copy; 2024 Overflow from the Right. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
