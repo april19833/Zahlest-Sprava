@@ -97,3 +97,27 @@ footer {
 #donate ul li a:hover {
     background-color: #45a049;
 }
+/* Дополнительные стили */
+#tasks ul {
+    padding: 0;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+#tasks ul li {
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#tasks ul li:hover {
+    transform: translateY(-5px);
+}
+
+#tasks ul li::before {
+    content: '🔍'; /* Добавим иконку перед каждым заданием */
+    margin-right: 10px;
+}
