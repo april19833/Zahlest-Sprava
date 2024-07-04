@@ -95,3 +95,13 @@ function handleTaskCompletion(taskId) {
     };
     saveProgress(progressData); // Вызываем функцию сохранения прогресса
 }
+// Загрузка данных о прогрессе из файла JSON
+fetch('progress.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log('Загруженные данные о прогрессе:', data);
+        // Здесь вы можете использовать данные для отображения текущего прогресса игрока
+    })
+    .catch(error => {
+        console.error('Ошибка загрузки данных:', error);
+    });
