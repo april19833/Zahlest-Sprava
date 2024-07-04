@@ -66,3 +66,42 @@ function completeTask(taskNumber) {
         checkTaskStatus(taskNumber + 1, document.getElementById(`task${taskNumber + 1}`));
     }
 }
+// Function to validate and complete a task
+function completeTask(taskNumber) {
+    let isValid = false;
+
+    if (taskNumber === 1) {
+        const answer = document.getElementById('puzzle1-answer').value.trim();
+        if (answer === '4') {
+            isValid = true;
+        } else {
+            alert('Incorrect answer for Task 1. Please try again.');
+        }
+    } else if (taskNumber === 2) {
+        const answer = document.getElementById('maze1-answer').value.trim();
+        if (answer.toLowerCase() === 'a-b') {
+            isValid = true;
+        } else {
+            alert('Incorrect answer for Task 2. Please try again.');
+        }
+    } else if (taskNumber === 3) {
+        const answer = document.getElementById('secret1-answer').value.trim();
+        if (answer.toLowerCase() === 'hello world') {
+            isValid = true;
+        } else {
+            alert('Incorrect answer for Task 3. Please try again.');
+        }
+    }
+
+    if (isValid) {
+        setTaskStatus(taskNumber, 'completed');
+        alert(`Task ${taskNumber} completed!`);
+
+        // Automatically unlock the next task if it exists
+        if (taskNumber < 3) {
+            setTaskStatus(taskNumber + 1, 'unlocked');
+            alert(`Task ${taskNumber + 1} unlocked!`);
+            checkTaskStatus(taskNumber + 1, document.getElementById(`task${taskNumber + 1}`));
+        }
+    }
+}
