@@ -16,11 +16,11 @@ Welcome to Overflow from the Right, a quest designed for cryptocurrency investor
 
 ## Current Rewards
 
-- Task 1: 10 DEV tokens
-- Task 2: 15 DEV tokens
-- Task 3: 20 DEV tokens
-- Task 4: 25 DEV tokens
-- Task 5: 30 DEV tokens
+- Task 1: certificates
+- Task 2: certificates
+- Task 3: certificates
+- Task 4: certificates
+- Task 5: certificates
 
 ## Contact Us
 
