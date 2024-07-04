@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zahlest Sprava Tasks</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,18 +15,20 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="task1">
             <h2>Task 1: Solve Puzzles</h2>
             <p>To unlock this task, donate $50 via the Beam Wallet.</p>
-            <button onclick="donateBeam()">Donate via Beam Wallet</button>
+            <button onclick="unlockTask1()">Donate via Beam Wallet</button>
         </section>
-        <section>
+        <section id="task2">
             <h2>Task 2: Navigate Mazes</h2>
             <p>To unlock this task, complete Task 1.</p>
+            <button onclick="unlockTask2()">Unlock Task 2</button>
         </section>
-        <section>
+        <section id="task3">
             <h2>Task 3: Decode Secret Messages</h2>
             <p>To unlock this task, complete Task 2.</p>
+            <button onclick="unlockTask3()">Unlock Task 3</button>
         </section>
     </main>
     <footer>
