@@ -64,3 +64,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+// Функция для сохранения прогресса в файл JSON
+function saveProgress(progressData) {
+    fetch('progress.json', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(progressData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Ошибка сохранения данных');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Данные успешно сохранены:', data);
+    })
+    .catch(error => {
+        console.error('Ошибка сохранения данных:', error);
+    });
+}
+
+// Пример использования: сохранение данных о завершении задания
+function handleTaskCompletion(taskId) {
+    // Предположим, что taskId - это id завершенного задания
+    let progressData = {
+        [`task${taskId}`]: true // Устанавливаем значение завершенного задания в true
+    };
+    saveProgress(progressData); // Вызываем функцию сохранения прогресса
+}
