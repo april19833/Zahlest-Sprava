@@ -3,69 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahlest Sprava</title>
+    <title>Tasks - Захлест Справа</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Zahlest Sprava</h1>
+        <h1>Tasks</h1>
         <nav>
+            <a href="index.html">Home</a>
             <a href="tasks.html">Tasks</a>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Welcome to Zahlest Sprava!</h2>
-            <p>This quest is designed for crypto investors who are passionate about earning rewards. Complete tasks and earn cryptocurrency rewards!</p>
-            <button onclick="unlockTask1()">Donate via Ethereum</button>
-            <button onclick="donateBeam()">Donate via Beam Wallet</button>
+        <section id="task1">
+            <h2>Task 1: Solve the Puzzle</h2>
+            <p>What is 2 + 2?</p>
+            <input type="text" id="puzzle1-answer">
+            <button onclick="completeTask(1)">Submit</button>
         </section>
-        <section>
-            <h2>Current Rewards</h2>
-            <ul>
-                <li>Task 1: 10 DEV tokens</li>
-                <li>Task 2: 15 DEV tokens</li>
-                <li>Task 3: 20 DEV tokens</li>
-            </ul>
-            <p>Prizes for 1st to 4th places: certificates and thank-you letters</p>
-            <p>To unlock the first task, donate $50 via the Beam Wallet.</p>
+        <section id="task2">
+            <h2>Task 2: Navigate the Maze</h2>
+            <p>What is the path from A to B?</p>
+            <input type="text" id="maze1-answer">
+            <button onclick="completeTask(2)">Submit</button>
         </section>
-    </main>
-    <footer>
-        <p>© 2024 Zahlest Sprava. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-<section id="task1">
-    <h2>Task 1: Solve Puzzles</h2>
-    <p>Complete the following puzzles to unlock Task 2:</p>
-    <div class="puzzle">
-        <!-- Example puzzle -->
-        <p>What is 2 + 2?</p>
-        <input type="text" id="puzzle1-answer" placeholder="Enter your answer">
-    </div>
-    <button onclick="completeTask(1)">Complete Task 1</button>
-</section>
-<section id="task2">
-    <h2>Task 2: Navigate Mazes</h2>
-    <p>Complete the maze to unlock Task 3:</p>
-    <div class="maze">
-        <!-- Example maze -->
-        <p>Find the path from A to B.</p>
-        <input type="text" id="maze1-answer" placeholder="Enter the path">
-    </div>
-    <button onclick="completeTask(2)">Complete Task 2</button>
-</section>
-<section id="task3">
-    <h2>Task 3: Decode Secret Messages</h2>
-    <p>Decode the following secret messages to complete the quest:</p>
-    <div class="secret-message">
-        <!-- Example secret message -->
-        <p>Translate the following: SGVsbG8gd29ybGQ=</p>
-        <input type="text" id="secret1-answer" placeholder="Enter your translation">
-    </div>
-    <button onclick="completeTask(3)">Complete Task 3</button>
-</section>
-
+        <section id="task3">
+            <h2>Task 3: Decode the Secret Message</h2>
+            <p>What does "SGVsbG8gd29ybGQ=" mean?</p>
+            <input type="text" id="secret1-answer">
+            <button onclick="completeTask(3)">Submit</button>
+        </section>
+        <section id="task4">
+            <h2>Task 4: Solve the Riddle</h2>
+            <p>What has keys but can't open locks?</p>
+            <input type="text" id="riddle1-answer">
+            <button onclick="completeTask(4)">Submit</button>
+        </section>
+        <section id="task5">
+            <h2>Task 5: Crack the Code</h2>
+            <p>Decode the following: "52 65 64 21 21"</p>
+            <input type="text" id="code1-answer">
+            <button onclick="completeTask(5)">Submit</button>
+        </section>
+        <section id="donation">
+            <h2>Donate to Unlock Tasks</h2>
+            <button onclick="donateAndUnlock(1)">Donate $50 to Unlock Task 1</button>
+            <button onclick="donateAndUnlock(2)">Donate $50 to Unlock Task 2</button>
+            <button onclick="donateAndUnlock(3)">Donate $50 to Unlock Task 3</button>
+            <button onclick="donateAndUnlock(4)">Donate $50 to Unlock Ta
