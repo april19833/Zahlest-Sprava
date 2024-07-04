@@ -54,3 +54,15 @@ function unlockTask3() {
         alert('Please complete Task 2 first.');
     }
 }
+// Function to mark a task as complete and unlock the next task
+function completeTask(taskNumber) {
+    setTaskStatus(taskNumber, 'completed');
+    alert(`Task ${taskNumber} completed!`);
+    
+    // Automatically unlock the next task if it exists
+    if (taskNumber < 3) {
+        setTaskStatus(taskNumber + 1, 'unlocked');
+        alert(`Task ${taskNumber + 1} unlocked!`);
+        checkTaskStatus(taskNumber + 1, document.getElementById(`task${taskNumber + 1}`));
+    }
+}
