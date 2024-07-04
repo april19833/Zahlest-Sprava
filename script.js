@@ -94,3 +94,10 @@ function donateAndUnlock(taskNumber) {
     alert(`Task ${taskNumber} unlocked!`);
     checkTaskStatus(taskNumber, document.getElementById(`task${taskNumber}`));
 }
+// Function to simulate donation and unlock the next task via Beam Wallet
+function donateAndUnlockBeam(taskNumber) {
+    alert('Thank you for your donation via Beam Wallet!');
+    setTaskStatus(taskNumber, 'unlocked');
+    alert(`Task ${taskNumber} unlocked!`);
+    checkTaskStatus(taskNumber, document.getElementById(`task${taskNumber}`));
+}
