@@ -7,7 +7,7 @@ Welcome to Overflow from the Right, a quest designed for cryptocurrency investor
 1. Visit the tasks page to view available tasks.
 2. Donate $50 to unlock a task.
 3. Complete tasks to earn cryptocurrency rewards.
-4. Top 10 participants receive certificates and a thank-you letter.
+4. Top 4 participants receive certificates and a thank-you letter.
 
 ## Donation Addresses
 
