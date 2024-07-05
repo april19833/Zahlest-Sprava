@@ -24,6 +24,6 @@ Welcome to Overflow from the Right, a quest designed for cryptocurrency investor
 
 ## Contact Us
 
-For any questions or support, please email us at [support@example.com](mailto:support@example.com).
+For any questions or support, please email us at [support@example.com](mailto:olgatelb@gmail.com).
 
 © 2024 Overflow from the Right. All rights reserved.
