@@ -21,10 +21,10 @@ Welcome to Overflow from the Right, a quest designed for cryptocurrency investor
 - Task 3: NFT
 - Task 4: NFT
 - Task 5: NFT
-- Task 6:NFT
-- Task 7:NFT
-- Task 8:NFT
-- Task 9:NFT
+- Task 6: NFT
+- Task 7: NFT
+- Task 8: NFT
+- Task 9: NFT
 - Task 10:NFT
 
 ## Contact Us
