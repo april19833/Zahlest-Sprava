@@ -12,7 +12,7 @@ Welcome to Overflow from the Right, a quest designed for cryptocurrency investor
 ## Donation Addresses
 
 - Ethereum: 0x9703fc5F0C0274740f251F30D7Ada155d1E597ff
-- Beam Wallet: [Donate via Beam Wallet](#)
+- Beam Wallet: [Donate via Beam Wallet](https://beam.eco/u/helga)
 
 ## Current Rewards
 
